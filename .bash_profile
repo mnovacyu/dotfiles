@@ -15,7 +15,8 @@ alias f='open -a Finder ./'                 # f:        Open a finder window
 alias ~='cd ~'                              # ~:        Go Home
 alias ll='ls -FGlAhp'                       # Preferred 'ls' implementation
 alias mtr='sudo /usr/local/sbin/mtr'        # mtr
+function cs () { cd "$1" && ls; }           # cd & ls
 
 # NETWORKING
-alias myip='curl ipappspot.com'             # myip:     Public facing IP
+alias myip='echo "`curl -s api.ipify.org`"' # myip:     Public facing IP
 alias flushdns='dscacheutil -flushcache'    # flushdns:
