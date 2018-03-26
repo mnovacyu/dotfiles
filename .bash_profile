@@ -15,6 +15,7 @@ alias f='open -a Finder ./'                 # f:        Open a finder window
 alias ~='cd ~'                              # ~:        Go Home
 alias ll='ls -FGlAhp'                       # Preferred 'ls' implementation
 alias mtr='sudo /usr/local/sbin/mtr'        # mtr
+alias dk='docker kill $(docker ps -q) && docker rm $(docker ps -a -q)'  # Kill all Docker containers
 function cs () { cd "$1" && ls; }           # cd & ls
 
 # NETWORKING
